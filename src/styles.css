@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
+
+
+.app-content{
+    width: 800px;
+    margin: 100px auto 0 auto;
+}
+.app-content md-card {
+    float: left;
+} 
+
+md-pagination-wrapper {
+  left: initial;
+  right: 0;
+}
+.md-tab-header{
+    float: left;
+}
+
+
+.tab_container {
+    min-width: 800px;
+}
+
+.input_rows: nth-child(even) {
+    background: #CCC
+}
