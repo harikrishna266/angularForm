@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CaseService} from '../services/case.service';
 
 @Component({
   selector: 'app-tabs',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public _caseSerivce:CaseService) { }
 
   ngOnInit() {
+  }
+  onSubmit() {
+      console.log('in');
+      this._caseSerivce.get('http://facebook.com')
+          .subscribe(res => {
+              console.log('in');
+          })
   }
 
 }
